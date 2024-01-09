@@ -24,7 +24,7 @@
 //    5. character index:  Name.charAt(index)
 //    6. add string:       Name.concat('Pandey');
 //    7. find position of 
-//       cahracter:        Name.indexOf('R')
+//       character:        Name.indexOf('R')
 //    8. Substring:        Name.substring(startindex, endindex); //end index is not inclusive
 //                         Name.slice(start,end); // Same as substring but we can also use negative values here
 //    9. Trim:             Name.trim() //Removes starting or ending spaces or newline only
@@ -36,7 +36,7 @@
 //    12. Conversion of:   Name.split(spilliting charater) 
 //        String into      const address = "I am from india"
 //        array of         console.log(address.split(' ')); => ['I', 'am', 'from', 'india']
-//        characters
+//        substrings
 
 
 // // Number
