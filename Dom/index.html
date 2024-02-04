@@ -4,8 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+            width: 100%;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    
+    <ul class="language">
+        <li>ruby</li>
+    </ul>
 </body>
+<script>
+    const language = (langName)=>{
+        const langBody = document.querySelector('.language');
+        const newLang = document.createElement('li');
+        newLang.className = "newLang";
+        newLang.innerText = langName; // Here we have to parse through entire dom tree
+        langBody.appendChild(newLang);
+    }
+
+    const language2 = (langName)=>{
+        const langBody = document.querySelector('.language');
+        const newLang = document.createElement('li');
+        newLang.appendChild(document.createTextNode(langName)); // Here we don't have to parse the entire dom tree
+        langBody.appendChild(newLang);
+    }
+    language('Javascript');
+    language2('Python');
+</script>
 </html>
