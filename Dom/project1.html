@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .color{
+            display: flex;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border: 2px solid #fff;
+            margin-top: 40px;
+        }
+        #box1{
+            background-color: blueviolet;
+        }
+        #box2{
+            background-color: greenyellow;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Color Change Game</h1>
+    <div class="color">
+        <div class="box" id="box1" onclick="colorchange1()">color1</div>
+        <div class="box" id="box2" onclick="colorchange2()">color2</div>
+        <div class="box" id="box3" onclick="colorchange3()">color3</div>
+        <div class="box" id="box4" onclick="colorchange4()">color4</div>
+    </div>
+    <h3>Click on color boxes to change bgm color</h3>
+</body>
+<script>
+    const colorchange1= () =>{
+        const bodyElement = document.querySelector('body');
+        bodyElement.style.background = 'blueviolet'
+    }
+    const colorchange2= () =>{
+        const bodyElement = document.querySelector('body');
+        bodyElement.style.background = 'greenyellow'
+    }
+    const colorchange3= () =>{
+        const bodyElement = document.querySelector('body');
+        bodyElement.style.background = 'orange'
+    }
+    const colorchange4= () =>{
+        const bodyElement = document.querySelector('body');
+        bodyElement.style.background = 'yellow'
+    }
+</script>
+</html>

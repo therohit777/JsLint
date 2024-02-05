@@ -80,3 +80,30 @@
 //             newLang.appendChild(document.createTextNode(langName)); // Here we don't have to parse the entire dom tree
 //             langBody.appendChild(newLang);
 //         }
+
+
+// Editing and Removing Elements
+//    const Element = document.querySelector('.home');
+//    Edit:
+//         1. Element.outerHTML = '<h1>Rohan</h1>';
+//         2. const newElement = document.createElement('h1');
+//             newElement.innerHTML="<h1>Rohan</h1>";
+//             Element.replaceWith(newElement);//replace current element from the newElement
+//    Remove:
+//         Element.remove();//remove the selected Element
+
+
+
+//    Getting values:
+    //   const value = parseInt(document.querySelector('input').value) //to get input values in integer    
+
+
+
+// Events:
+//    TargetElement.addEventListener('event','callbackFunction');
+    //   const Elements = document.querySelector('.button');
+    //   Elements.addEventListener('event',(e)=>{
+    //     console.log(e);
+    //     console.log(e.target.id); //e is basically the event, e.target tells us about the origin of the event where its coming from. 
+    //   })
+
